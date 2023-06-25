@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="entertainment web app !">
+  <title>entertainment-web-app</title>
+</head>
+
+<body class="h--screen w--screen bg--primary--dark--8">
+  <header class="bg--primary--dark--7 p--1 d--flex justify--space-between">
+    <img src="./assets/logo.svg" alt="home icon">
+    <ul class="d--flex gap--2 items--center">
+      <li class="w--auto h--fit d--flex cursor--pointer">
+        <a href="#" class="d--flex"><img src="./assets/icon-nav-home.svg" alt="home"></a>
+      </li>
+      <li class="w--auto h--fit d--flex cursor--pointer">
+        <a href="#" class="d--flex"><img src="./assets/icon-nav-movies.svg" alt="movies"></a>
+      </li>
+      <li class="w--auto h--fit d--flex cursor--pointer">
+        <a href="#" class="d--flex"><img src="./assets/icon-nav-tv-series.svg" alt="tv"></a>
+      </li>
+      <li class="w--auto h--fit d--flex cursor--pointer">
+        <a href="#" class="d--flex"><img src="./assets/icon-nav-bookmark.svg" alt="my bookmarks"></a>
+      </li>
+    </ul>
+    <a class="h--1 w--auto cursor--pointer"><img src="./assets/image-avatar.png" alt="avatar image"
+        class="h--1 w--auto rounded--full border--2 border--white border--solid"></a>
+  </header>
+  <main class="w--full">
+    <form class="w--full d--flex items--center py--1 h--fit">
+      <label for="query" class="d--block mx--1 cursor--pointer"><img src="./assets/icon-search.svg" alt="search's icon"
+          class="d--block"></label>
+      <input type="text" name="query" id="query" class="bg--transparent border--none w--full h--full search"
+        placeholder="Search for movies or TV series">
+    </form>
+    <section class="pl--1">
+      <h2 class="text--white first--letter--transform--uppercase mb--1">
+        trending
+      </h2>
+      <ul class="trending list--style--none gap--1 pr--1" id="trending"></ul>
+    </section>
+    <section class="px--1">
+      <h3 class="transform--capitalize text--white py--1">
+        recommended for you
+      </h3>
+      <ul class="recommended" id="recommended"></ul>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
